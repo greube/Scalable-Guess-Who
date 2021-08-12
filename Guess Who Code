@@ -1,0 +1,112 @@
+
+one = ("1")
+two = ("2")
+p = (" ")
+g = 0
+d = 0
+#Characters Attributes
+rachel = (" 21")
+jon = (" 122")
+nick = (" 11")
+ashley = (" 22")
+jake = (" 1212")
+joshua = (" 1211")
+
+  
+
+
+#Characters names 
+Nrachel = ("Rachel")
+Njon = ("Jon")
+Nnick = ("Nick")
+Nashley = ("Ashley")
+Njake = ("Jake")
+Njoshua = ("Joshua")
+
+
+#Check Character Function
+def check():
+    global d
+
+    if p == (rachel):
+        print("You have", Nrachel)
+        d = d + 1
+
+    if p == ( jon):
+        print("You have ", Njon)
+        d = d + 1
+
+    if p == ( nick):
+        print("You have", Nnick )
+        d = d + 1
+
+    if p == (ashley):
+        print("You have", Nashley)
+        d = d + 1
+
+    if p == (jake):
+        print("You have", Njake)
+        d = d + 1
+
+    if p == (joshua):
+        print("You have", Njoshua)
+        d = d + 1
+
+
+#Male Path
+if g == 0:
+    if d == 0:
+        a = str(input("Is your character male "))
+if a == ("Y"):
+    p = p + one
+    check()
+else:
+    p = p + two
+    g = g + 1
+    check()
+
+if g == 0:
+    if d == 0:
+        a = str(input("Does your character wear glasses "))
+if a == ("Y"):
+    p = p + one
+    check()
+else:
+    if g == 0:
+        p = p + two
+        check()
+
+
+if g == 0:
+    if d == 0:
+        a = str(input("Does your character have a moustache "))
+if a == ("Y"):
+    p = p + one
+    check()
+else:
+    if g == 0:
+        p = p + two
+        check()
+
+if g == 0:
+    if d == 0:
+        a = str(input("Does your character have white hair "))
+if a == ("Y"):
+    p = p + one
+    check()
+else:
+    if g == 0:
+        p = p + two
+        check()
+
+#Female Path
+if g == 1:
+    if d == 0:
+        a = str(input("Does your character have brown hair "))
+if a == ("Y"):
+    p = p + one
+    check()
+else:
+    if g == 1:
+        p = p + two
+        check() 
